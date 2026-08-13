@@ -18,8 +18,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
-        jMenuBar1.setBackground (new
-        Color(25, 55, 100));
+        setExtendedState(MAXIMIZED_BOTH);
+        
     }
 
     /**
@@ -39,24 +39,59 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu10 = new javax.swing.JMenu();
         menuCadastrarQuartos = new javax.swing.JMenuItem();
         menuConsultarQuartos = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu11 = new javax.swing.JMenu();
+        jMenu12 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
+        jMenuItem18 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jMenuItem19 = new javax.swing.JMenuItem();
+        jMenuItem20 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenu18 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu19 = new javax.swing.JMenu();
+        jMenuItem21 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
+        jMenu21 = new javax.swing.JMenu();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu22 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenu23 = new javax.swing.JMenu();
+        jMenuItem22 = new javax.swing.JMenuItem();
+        jMenuItem23 = new javax.swing.JMenuItem();
+        jMenuItem24 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
+        jMenu13 = new javax.swing.JMenu();
+        jMenuItem17 = new javax.swing.JMenuItem();
         menuSair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SIGEP - Tela Principal");
 
         jMenuBar1.setBackground(new java.awt.Color(51, 51, 255));
+        jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jMenu1.setBackground(new java.awt.Color(51, 29, 239));
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/registration_card_icon_177255 (1).png"))); // NOI18N
         jMenu1.setText("Cadastros");
+        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jMenu9.setText("Hospedes");
+        jMenu9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadastrarHospede.setText("Cadastrar");
         jMenu9.add(menuCadastrarHospede);
@@ -68,6 +103,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu1.add(jMenu9);
 
         jMenu10.setText("Quartos");
+        jMenu10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         menuCadastrarQuartos.setText("Cadastrar");
         menuCadastrarQuartos.addActionListener(this::menuCadastrarQuartosActionPerformed);
@@ -78,27 +114,178 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu10);
 
+        jMenu8.setText("Funcionários");
+        jMenu8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem1.setText("Cadastrar");
+        jMenuItem1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu8.add(jMenuItem1);
+
+        jMenuItem3.setText("Consultar");
+        jMenuItem3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu8.add(jMenuItem3);
+
+        jMenu1.add(jMenu8);
+
+        jMenuItem2.setText("Fornecedores");
+        jMenuItem2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuItem2.addActionListener(this::jMenuItem2ActionPerformed);
+        jMenu1.add(jMenuItem2);
+
+        jMenu11.setText("Produtos");
+        jMenu11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu1.add(jMenu11);
+
+        jMenu12.setText("Serviços");
+        jMenu12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu1.add(jMenu12);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Reservas");
+        jMenu2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem15.setText("Cadastrar Reserva");
+        jMenuItem15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu2.add(jMenuItem15);
+
+        jMenuItem16.setText("Consultar Reserva");
+        jMenuItem16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuItem16.addActionListener(this::jMenuItem16ActionPerformed);
+        jMenu2.add(jMenuItem16);
+
+        jMenuItem18.setText("Finalizar Reserva");
+        jMenuItem18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu2.add(jMenuItem18);
+
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setText("Consumo");
+        jMenu3.setText("Vendas");
+        jMenu3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem19.setText("Produtos");
+        jMenuItem19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu3.add(jMenuItem19);
+
+        jMenuItem20.setText("Serviços");
+        jMenuItem20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu3.add(jMenuItem20);
+
         jMenuBar1.add(jMenu3);
 
         jMenu4.setText("Finanças");
+        jMenu4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenu18.setText("Contas à Pagar");
+        jMenu18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem5.setText("Cadastrar");
+        jMenuItem5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu18.add(jMenuItem5);
+
+        jMenuItem6.setText("Consultar");
+        jMenuItem6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu18.add(jMenuItem6);
+
+        jMenu4.add(jMenu18);
+
+        jMenu19.setText("Contas à Receber");
+        jMenu19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu4.add(jMenu19);
+
+        jMenuItem21.setText("Balanço");
+        jMenuItem21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu4.add(jMenuItem21);
+
         jMenuBar1.add(jMenu4);
 
         jMenu5.setText("Relatórios");
+        jMenu5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenu21.setText("Finanças");
+        jMenu21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem7.setText("Contas à Pagar");
+        jMenuItem7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuItem7.addActionListener(this::jMenuItem7ActionPerformed);
+        jMenu21.add(jMenuItem7);
+
+        jMenuItem8.setText("Contas à Receber");
+        jMenuItem8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu21.add(jMenuItem8);
+
+        jMenuItem9.setText("Balanço");
+        jMenuItem9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuItem9.addActionListener(this::jMenuItem9ActionPerformed);
+        jMenu21.add(jMenuItem9);
+
+        jMenu5.add(jMenu21);
+
+        jMenu22.setText("Reservas");
+        jMenu22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem10.setText("Quartos Disponíveis");
+        jMenuItem10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuItem10.addActionListener(this::jMenuItem10ActionPerformed);
+        jMenu22.add(jMenuItem10);
+
+        jMenuItem11.setText("Quartos Ocupados");
+        jMenuItem11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu22.add(jMenuItem11);
+
+        jMenuItem12.setText(" Reservas Futuras");
+        jMenuItem12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu22.add(jMenuItem12);
+
+        jMenu5.add(jMenu22);
+
+        jMenu23.setText("Vendas");
+        jMenu23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu5.add(jMenu23);
+
+        jMenuItem22.setText("Hospedes");
+        jMenuItem22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu5.add(jMenuItem22);
+
+        jMenuItem23.setText("Funcionários");
+        jMenuItem23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu5.add(jMenuItem23);
+
+        jMenuItem24.setText("Fornecedores");
+        jMenuItem24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenuItem24.addActionListener(this::jMenuItem24ActionPerformed);
+        jMenu5.add(jMenuItem24);
+
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Segurança");
+        jMenu6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenuItem13.setText("Backup de Segurança");
+        jMenuItem13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu6.add(jMenuItem13);
+
+        jMenuItem14.setText("Restarurar Backup");
+        jMenuItem14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu6.add(jMenuItem14);
+
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("Ferramentas");
+        jMenu7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jMenu13.setText("Tela de Fundo");
+        jMenu13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu7.add(jMenu13);
+
+        jMenuItem17.setText("Sobre o Sistema");
+        jMenuItem17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jMenu7.add(jMenuItem17);
+
         jMenuBar1.add(jMenu7);
 
         menuSair.setText("Sair");
+        menuSair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenuBar1.add(menuSair);
 
         setJMenuBar(jMenuBar1);
@@ -111,7 +298,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 499, Short.MAX_VALUE)
+            .addGap(0, 500, Short.MAX_VALUE)
         );
 
         pack();
@@ -125,6 +312,30 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void menuCadastrarQuartosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastrarQuartosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuCadastrarQuartosActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
+    private void jMenuItem16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem16ActionPerformed
+
+    private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem24ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,14 +365,46 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
+    private javax.swing.JMenu jMenu12;
+    private javax.swing.JMenu jMenu13;
+    private javax.swing.JMenu jMenu18;
+    private javax.swing.JMenu jMenu19;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu21;
+    private javax.swing.JMenu jMenu22;
+    private javax.swing.JMenu jMenu23;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
+    private javax.swing.JMenuItem jMenuItem19;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem20;
+    private javax.swing.JMenuItem jMenuItem21;
+    private javax.swing.JMenuItem jMenuItem22;
+    private javax.swing.JMenuItem jMenuItem23;
+    private javax.swing.JMenuItem jMenuItem24;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenuItem menuCadastrarHospede;
     private javax.swing.JMenuItem menuCadastrarQuartos;
     private javax.swing.JMenuItem menuConcularHospede;
